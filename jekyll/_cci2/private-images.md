@@ -87,8 +87,8 @@ jobs:
     docker:
       - image: account-id.dkr.ecr.us-east-1.amazonaws.com/org/repo:0.1
         aws_auth:
-          aws_access_key_id: $AWS_ACCESS_KEY_ID_STAGING
-          aws_secret_access_key: $AWS_SECRET_ACCESS_KEY_STAGING
+          aws_access_key_id: $AWS_ACCESS_KEY_ID_PRODUCTION
+          aws_secret_access_key: $AWS_SECRET_ACCESS_KEY_PRODUCTION
     steps:
       - run:
           name: "Full Test Suite"
